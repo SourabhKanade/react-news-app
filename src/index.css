@@ -80,3 +80,117 @@
     background-color: var(--primary-color);
     text-transform: capitalize;
   }
+/*------------------------------- news article read more button -------------------------------*/
+
+
+.css-button-arrow--blue {
+  min-width: 130px;
+  height: 40px;
+  color: #fff!important;
+  padding: 7px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  background-color: #3d348b
+}
+.css-button-arrow--blue:hover {
+  border-radius: 5px;
+  padding-right: 24px;
+  padding-left:8px;
+}
+.css-button-arrow--blue:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+.css-button-arrow--blue:after {
+  content: "\00BB";
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  line-height: 40px;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+}
+
+/*-----------------------FOOTER PREVIOUS KEY----------------------------*/
+
+.css-button-sliding-to-left--sky {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #1f174a;
+  color: #232170;
+}
+.css-button-sliding-to-left--sky:hover {
+  color: #fff;
+}
+.css-button-sliding-to-left--sky:hover:after {
+  width: 100%;
+}
+.css-button-sliding-to-left--sky:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #4433ff;
+}
+
+/*-----------------------FOOTER NEXT KEY----------------------------*/
+
+.css-button-sliding-to-right--sky {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #1f174a;
+  color: #232170;
+}
+.css-button-sliding-to-right--sky:hover {
+  color: #fff;
+}
+.css-button-sliding-to-right--sky:hover:after {
+  width: 100%;
+}
+.css-button-sliding-to-right--sky:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #4433ff;
+}
