@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div>
       <Navbar/>
-      <News/>
+      <News pageSize={6}/>
     </div>
   );
 }
