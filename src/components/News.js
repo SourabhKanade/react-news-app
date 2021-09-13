@@ -93,15 +93,8 @@ export class News extends Component {
               return (
                 <div className="col-md-4" key={element.url}>
                   <NewsItem
-                    title={element.title ? element.title.slice(0, 45) : ""}
-                    description={
-                      element.description
-                        ? element.description.slice(0, 100)
-                        : ""
-                    }
-                    urlToImage={element.urlToImage}
-                    newsUrl={element.url}
-                  />
+                    title={element.title ? element.title.slice(0, 45) : ""} description={element.description ? element.description.slice(0, 100): ""}
+                    urlToImage={element.urlToImage} newsUrl={element.url} author={element.author} date={element.publishedAt} source={element.source.name} />
                 </div>
               );
             })}
@@ -111,8 +104,7 @@ export class News extends Component {
             disabled={this.state.page <= 1}
             type="button"
             onClick={this.handlePrevClick}
-            className="btn css-button-sliding-to-left--sky"
-          >
+            className="btn css-button-sliding-to-left--sky">
             {" "}
             &larr; Previous{" "}
           </button>

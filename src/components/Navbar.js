@@ -29,11 +29,11 @@ export class Navbar extends Component {
               <li className="nav-item"><Link className="nav-link" aria-current="page" to="Health">Health</Link></li>
               <li className="nav-item"><Link className="nav-link" aria-current="page" to="Sports">Sports</Link></li>
               <li className="nav-item"><Link className="nav-link" aria-current="page" to="Technology">Technology</Link></li>
-              {/* <li className="nav-item"><Link className="nav-link" aria-current="page" to="Contact">Contact</Link></li> */}
+              {/* <li className="nav-ibhtem"><Link className="nav-link" aria-current="page" to="Contact">Contact</Link></li> */}
             </ul>
-            <form className="d-flex">
-                <button disabled="true" className="btn  btn-style" type="signup">Sign up</button>
-                <button disabled="true" className="btn  btn-style" type="login">Log in</button>
+            <form className="d-flex ">
+                <button className="disabled = true btn btn-style" type="signup">Sign up</button>
+                <button className="disabled = true btn btn-style" type="login">Log in</button>
             </form>
             {/* <form className="d-flex">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
