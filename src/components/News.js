@@ -14,7 +14,7 @@ const News = (props) => {
 
 const updateNews = async () => {
   props.setProgress(10);
-  let url = `http://api.mediastack.com/v1/news?access_key=${props.apiKey}&languages=en&country=in&categories=${props.category}&page=${page}&pageSize=${props.pageSize}`;
+  let url = `//api.mediastack.com/v1/news?access_key=${props.apiKey}&languages=en&country=in&categories=${props.category}&page=${page}&pageSize=${props.pageSize}`;
   setLoading(false)
   let response = await fetch(url)
   props.setProgress(30);
@@ -24,7 +24,9 @@ const updateNews = async () => {
   setTotalResults(parsedData.limit)
   setLoading(false)
   props.setProgress(100);
+
 }
+
 
 
   // const updateNews = async () => {
@@ -48,7 +50,7 @@ const updateNews = async () => {
 
   const fetchMoreData = async () => {
   setPage(page + 1 );
-  let url = `http://api.mediastack.com/v1/news?access_key=${props.apiKey}&languages=en&country=in&categories=${props.category}&page=${page}&pageSize=${props.pageSize}`;
+  let url = `//api.mediastack.com/v1/news?access_key=${props.apiKey}&languages=en&country=in&categories=${props.category}&page=${page}&pageSize=${props.pageSize}`;
   let response = await fetch(url);
   let parsedData = await response.json();
   setData(data.concat(parsedData.data))
