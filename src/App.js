@@ -21,12 +21,12 @@ const App = () => {
         <Switch>
           {/* <Route path="/general"><News setProgress={setProgress} apiKey={apiKey} key="general" pageSize={pageSize} country="in" category="general"/></Route>
           <Route path="/about"><News setProgress={setProgress} apiKey={apiKey} key="about" pageSize={pageSize} country="in" category="about"/></Route> */}
-          <Route path="/business"><News setProgress={setProgress} apiKey={apiKey} key="about" pageSize={pageSize} country="in" category="Business" /></Route>
-          <Route path="/entertainment"><News setProgress={setProgress} apiKey={apiKey} key="entertainment" pageSize={pageSize} country="in" category="Entertainment" /></Route>
-          <Route path="/general"><News setProgress={setProgress} apiKey={apiKey} key="general" pageSize={pageSize} country="in" category="General" /></Route>
-          <Route path="/Sports"><News setProgress={setProgress} apiKey={apiKey} key="sports" pageSize={pageSize} country="in" category="Sports" /></Route>
-          <Route path="/health"><News setProgress={setProgress} apiKey={apiKey} key="health" pageSize={pageSize} country="in" category="Health" /></Route>
-          <Route path="/technology"><News setProgress={setProgress} apiKey={apiKey} key="technology" pageSize={pageSize} country="in" category="Technology" /></Route>
+          <Route path="/business"><News setProgress={setProgress} apiKey={apiKey} key="business" content="Business" pageSize={pageSize} country="in" category="business" /></Route>
+          <Route path="/entertainment"><News setProgress={setProgress} apiKey={apiKey} key="entertainment" content="Entertainment" pageSize={pageSize} country="in" category="entertainment" /></Route>
+          <Route path="/general"><News setProgress={setProgress} apiKey={apiKey} key="general" content="General" pageSize={pageSize} country="in" category="general" /></Route>
+          <Route path="/Sports"><News setProgress={setProgress} apiKey={apiKey} key="sports" content="Sports" pageSize={pageSize} country="in" category="sports" /></Route>
+          <Route path="/health"><News setProgress={setProgress} apiKey={apiKey} key="health" content="Health" pageSize={pageSize} country="in" category="health" /></Route>
+          <Route path="/technology"><News setProgress={setProgress} apiKey={apiKey} key="technology" content="Technology" pageSize={pageSize} country="in" category="technology" /></Route>
         </Switch>
       </Router>
     </div>
