@@ -14,7 +14,7 @@ const News = (props) => {
 
 const updateNews = async () => {
   props.setProgress(10);
-  let url = `http://api.mediastack.com/v1/news?&access_key=${props.apiKey}&languages=en&country=in&categories=${props.category}&page=${page}&pageSize=${props.pageSize}`;
+  let url = `http://api.mediastack.com/v1/news?access_key=${props.apiKey}&languages=en&country=in&categories=${props.category}&page=${page}&pageSize=${props.pageSize}`;
   setLoading(false)
   let response = await fetch(url)
   props.setProgress(30);
