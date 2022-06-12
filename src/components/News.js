@@ -11,7 +11,7 @@ const News = (props) => {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(true)
 
-    document.title = `News Ninja - ${props.category}`;
+  document.title = `News Ninja - ${props.category}`;
 
      const options = {
       method: 'GET',
