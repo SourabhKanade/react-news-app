@@ -26,10 +26,10 @@ const Navbar = () => {
               <li className="nav-item"><Link className="nav-link" aria-current="page" to="Sports">Sports</Link></li>
               <li className="nav-item"><Link className="nav-link" aria-current="page" to="Technology">Technology</Link></li>
             </ul>
-            <form className="d-flex ">
+            {/* <form className="d-flex ">
               <button className="disabled = true btn btn-style" type="signup">Sign up</button>
               <button className="disabled = true btn btn-style" type="login">Log in</button>
-            </form>
+            </form> */}
           </div>
         </div>
       </nav>
