@@ -20,7 +20,7 @@ const App = () => {
           <Route path="/business"><News setProgress={setProgress} key="business" content="Business" country="in" category="Business" /></Route>
           <Route path="/entertainment"><News setProgress={setProgress} key="entertainment" content="Entertainment" country="in" category="Entertainment" /></Route>
           <Route path="/general"><News setProgress={setProgress} key="general" content="General" country="in" category="General" /></Route>
-          <Route path="/Sports"><News setProgress={setProgress} key="sports" content="Sports" country="in" category="Sports" /></Route>
+          <Route path="/sports"><News setProgress={setProgress} key="sports" content="Sports" country="in" category="Sports" /></Route>
           <Route path="/health"><News setProgress={setProgress} key="health" content="Health" country="in" category="Health" /></Route>
           <Route path="/technology"><News setProgress={setProgress} key="technology" content="Technology" country="in" category="Technology" /></Route>
         </Switch>
