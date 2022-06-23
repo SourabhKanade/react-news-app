@@ -13,6 +13,7 @@ const App = () => {
     <div>
       <Router>
         <Navbar />
+        <h1>This is news app</h1>
         <LoadingBar
           color='#f11946'
           progress={progress} />
