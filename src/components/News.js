@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 
 const News = (props) => {
 
-  const API_KEY = process.env.REACT_APP_NEWS_API;
+  // const API_KEY = process.env.REACT_APP_API_KEY;
 
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(true)
@@ -23,7 +23,7 @@ const News = (props) => {
 const updateNews = async () => {
   props.setProgress(10);
   setLoading(false)
-  let response = await fetch(`https://current-news.p.rapidapi.com/news/${props.category}/?rapidapi-key=${API_KEY}`, options);
+  let response = await fetch(`https://current-news.p.rapidapi.com/news/${props.category}/?rapidapi-key=${process.env.REACT_APP_API_KEY}`, options);
   props.setProgress(30);
   let parsedData = await response.json();
   props.setProgress(70);
@@ -48,7 +48,8 @@ const updateNews = async () => {
           
             {data.map((element, index) => {
               return (<div className="col-md-4" key={index}>
-                <NewsItem title={element.title ? element.title.slice(0, 45) : ""}
+                <NewsItem 
+                  title={element.title ? element.title.slice(0, 45) : ""}
                   description={element.description ? element.description.slice(0, 100) : ""}
                   image={element.urlToImage}
                   newsUrl={element.url}
