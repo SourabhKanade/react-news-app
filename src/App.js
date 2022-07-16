@@ -4,6 +4,7 @@ import News from './components/News';
 import "./index.css";
 import LoadingBar from 'react-top-loading-bar'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import Home from './components/Home';
 
 const App = () => {
 
@@ -11,12 +12,14 @@ const App = () => {
 
   return (
     <div>
+      
       <Router>
         <Navbar />
-        <h1>This is news app</h1>
+      
         <LoadingBar
           color='#f11946'
           progress={progress} />
+             {/* <Home /> */}
         <Switch>
           <Route path="/business"><News setProgress={setProgress} key="business" content="Business" country="in" category="Business" /></Route>
           <Route path="/entertainment"><News setProgress={setProgress} key="entertainment" content="Entertainment" country="in" category="Entertainment" /></Route>

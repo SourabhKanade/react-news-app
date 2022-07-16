@@ -39,7 +39,7 @@ const updateNews = async () => {
 
   return (
     <>
-      <h1 className="text-center" style={{margin: '40px 0 35px 0px', marginBottom: '10px'}}>Ninja News - Top {props.content} Headlines</h1>
+      <h1 className="text-center" style={{margin: '80px 0 35px 0px', marginBottom: '10px'}}>Ninja News - Top {props.content} Headlines</h1>
       {loading && <Spinner />}
       {/* <InfiniteScroll dataLength={data.length} next={updateNews} hasMore={data.length !== totalResults} loader={<Spinner />}> */}
 
