@@ -19,12 +19,12 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item"><Link className="nav-link" aria-current="page" to="General">General</Link></li>
-              <li className="nav-item"><Link className="nav-link" aria-current="page" to="Business">Business</Link></li>
-              <li className="nav-item"><Link className="nav-link" aria-current="page" to="Entertainment">Entertainment</Link></li>
-              <li className="nav-item"><Link className="nav-link" aria-current="page" to="Health">Health</Link></li>
-              <li className="nav-item"><Link className="nav-link" aria-current="page" to="Sports">Sports</Link></li>
-              <li className="nav-item"><Link className="nav-link" aria-current="page" to="Technology">Technology</Link></li>
+              <li className="nav-item"><Link className="nav-link" aria-current="page" to="politics">Politics</Link></li>
+              <li className="nav-item"><Link className="nav-link" aria-current="page" to="business">Business</Link></li>
+              <li className="nav-item"><Link className="nav-link" aria-current="page" to="entertainment">Entertainment</Link></li>
+              <li className="nav-item"><Link className="nav-link" aria-current="page" to="health">Health</Link></li>
+              <li className="nav-item"><Link className="nav-link" aria-current="page" to="sports">Sports</Link></li>
+              <li className="nav-item"><Link className="nav-link" aria-current="page" to="technology">Technology</Link></li>
             </ul>
             {/* <form className="d-flex ">
               <button className="disabled = true btn btn-style" type="signup">Sign up</button>
