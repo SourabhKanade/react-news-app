@@ -3,13 +3,13 @@ import NewsItem from "./NewsItem";
 import Spinner from "./Spinner";
 import PropTypes from "prop-types";
 import Error from "./Error";
+import { Typography } from "@mui/material";
 // import InfiniteScroll from "react-infinite-scroll-component";
 
 const News = (props) => {
 
-  const API_KEY = process.env.REACT_APP_SECRET_KEY;
-  // const API_KEY = 'pub_287822dd3cef2ac9fe22ee36742ee60e37779';
-// console.log(process.env.REACT_APP_SECRET_KEY, "LOL");
+  // const API_KEY = process.env.REACT_APP_SECRET_KEY;
+
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -20,6 +20,9 @@ const News = (props) => {
     //     'X-RapidAPI-Host': 'current-news.p.rapidapi.com'
     //   }
     // };
+
+
+    console.log(process.env.REACT_APP_SECRET_KEY, "data")
      
 const updateNews = async () => {
   props.setProgress(10);
@@ -29,7 +32,7 @@ const updateNews = async () => {
   // https://current-news.p.rapidapi.com/news/${props.category}/?rapidapi-key=${API_KEY}`, options);
   props.setProgress(30);
   let parsedData = await response?.json();
-  // console.log(parsedData, "data")
+  console.log(parsedData, "data")
   props.setProgress(70);
   setData(parsedData)
   setLoading(false)
@@ -44,7 +47,7 @@ const updateNews = async () => {
 
   return (
     <>
-      <h1 className="text-center" style={{margin: '80px 0 35px 0px', marginBottom: '10px'}}>Ninja News - Top {props.content} Headlines</h1>
+      <Typography className="text-center" style={{margin: '80px 0 35px 0px',fontSize: "2em", marginBottom: '10px'}}>Ninja News - Top {props.content} Headlines</Typography>
       {loading && <Spinner />}
       {/* <InfiniteScroll dataLength={data.length} next={updateNews} hasMore={data.length !== totalResults} loader={<Spinner />}> */}
 

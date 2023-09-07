@@ -1,10 +1,16 @@
+import { Typography } from '@mui/material'
 import React from 'react'
 
 function Home() {
   
   return (
     <>
-      <h1>This is news app</h1>
+      <Typography style={{fontSize: "20px",
+          display: "flex",
+    justifyContent: "center",
+    marginTop: "162px"}}>This is news app
+      </Typography>
+
     </>
   )
 }

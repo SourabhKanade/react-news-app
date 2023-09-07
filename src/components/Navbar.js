@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import React from 'react'
 import { Link } from 'react-router-dom';
 
@@ -7,7 +8,7 @@ const Navbar = () => {
       <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
           <Link className="navbar-brand" to="/">News Ninja</Link>
-          <button
+          <Button
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -16,7 +17,7 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
-          </button>
+          </Button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item"><Link className="nav-link" aria-current="page" to="politics">Politics</Link></li>
